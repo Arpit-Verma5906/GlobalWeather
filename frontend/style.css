@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Solway:wght@300;400;500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Solway', serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('bg/hail-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(30px);
+    color: rgb(252, 233, 211);
+}
+
+#WeatherDashboard {
+    margin: 0;
+    height: 90vh;
+    width: 80vw;
+    background-image: url('bg/hail-bg.jpg');
+    filter: brightness(80%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    padding: 2%;
+    gap: 2%;
+    border-radius: 20px;
+}
+
+#WeatherSearchPanel {
+    flex: 3;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2%
+}
+
+.search {
+    margin: 5%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #e0f7fa;
+    border-radius: 30px;
+    padding: 6px 12px;
+}
+
+.search input {
+    height: 12px;
+    flex: 1;
+    min-width: 0;
+    border: none;
+    outline: none;
+    padding: 10px 10px;
+    border-radius: 30px;
+    background: transparent;
+    color: #777d80;
+    font-size: 12px;
+}
+
+.search button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 0px;
+}
+
+.search button img {
+    width: 16px;
+    height: 16px;
+}
+
+#WeatherImg {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#Info {
+    align-self: normal;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#Location {
+    display: flex;
+    gap: 4%;
+}
+
+#locationMark {
+    aspect-ratio: 1;
+    width: 12%;
+    object-fit: contain;
+}
+
+#City {
+    font-weight: light;
+    font-size: 20px;
+}
+
+#Temp {
+    font-size: 40px;
+}
+
+#Line {
+    width: 90%;
+}
+
+#NextDayForecast {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+
+#HeadingNextDayForecast {
+    align-self: center;
+}
+
+#NextDayForecastImg {
+    width: 40%;
+    margin: 0 auto;
+}
+
+#NextDayForecastDiv1 {
+    display: flex;
+    font-size: 10px;
+    justify-content: space-around;
+}
+
+#NextDayForecastDiv2 {
+    display: flex;
+    font-size: 10px;
+    justify-content: space-around;
+}
+
+#InformationSection {
+    flex: 9;
+    display: flex;
+    flex-direction: column;
+}
+
+#HourlyForecastSection {
+    flex: 8;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+
+#WeatherConditionTitle {
+    text-transform: capitalize;
+    margin-left: 2%;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+#HourlyForecast {
+    display: flex;
+    flex: 1;
+    gap: 2%;
+}
+
+.HourlyForecastCard {
+    flex: 1;
+    height: 90%;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.HourlyForecastTime {
+    align-self: center;
+    font-weight: 100;
+}
+
+.HourlyForecastLine {
+    width: 90%;
+    align-self: center;
+}
+
+.HourlyForecastImg {
+    padding: 10%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.HourlyForecastTemp {
+    align-self: center;
+    font-size: larger;
+    font-weight: lighter;
+}
+
+#HighLightsSection {
+    flex: 9;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+
+#Title {
+    margin-left: 3%;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+#Highlights {
+    display: flex;
+    flex: 1;
+    gap: 5%;
+}
+
+#HighlightCard1 {
+    flex: 1;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 20px;
+}
+
+#HighlightCard2 {
+    flex: 1;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 20px;
+}
