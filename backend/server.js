@@ -4,7 +4,7 @@ import dotenv from 'dotenv';
 
 const app = express();
 const port = 4988;
-app.use(cors({ origin: 'http://127.0.0.1:5500' }));
+app.use(cors({ origin: 'https://globalweather-frontend.netlify.app' }));
 dotenv.config();
 
 const apiKey = process.env.WEATHER_API_KEY;
