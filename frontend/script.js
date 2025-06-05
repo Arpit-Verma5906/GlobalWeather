@@ -1,5 +1,5 @@
 
-const baseUrl = "http://127.0.0.1:4988"
+const baseUrl = "https://globalweather-backend.onrender.com"
 
 const searchInp = document.querySelector("#city-input");
 const searchBtn = document.querySelector("#search-button");
