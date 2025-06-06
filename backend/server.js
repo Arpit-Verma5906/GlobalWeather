@@ -2,10 +2,12 @@ import express from "express";
 import cors from "cors";
 import dotenv from 'dotenv';
 
+dotenv.config();
+
 const app = express();
 const port = 4988;
-app.use(cors({ origin: 'https://globalweather-frontend.netlify.app' }));
-dotenv.config();
+console.log(process.env.FRONTEND_URL)
+app.use(cors({ origin: process.env.FRONTEND_URL ?? 'http://127.0.0.1:5500' }));
 
 const apiKey = process.env.WEATHER_API_KEY;
 const baseURL = "https://api.openweathermap.org/data/2.5"

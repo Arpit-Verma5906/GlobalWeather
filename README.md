@@ -22,8 +22,10 @@ Global-Weather/
 │   ├── index.html
 │   ├── script.js
 │   ├── style.css
-│   ├── bg/
-│   └── Images/
+│   ├── config.js
+│   └── assets/
+│       ├── bg/
+│       └── images/
 │
 └── README.md
 ```
@@ -45,10 +47,10 @@ Global-Weather/
    ```
    npm install
    ```
-3. Set your weather API key in `server.js` (if required).
+3. Copy `.env.default` to `.env` and set your weather API key and other environment variables in `.env`.
 4. Start the server:
    ```
-   node server.js
+   npm start
    ```
 
 ### Frontend Setup
@@ -64,7 +66,12 @@ Global-Weather/
 ## Customization
 
 - Add or replace background images in bg.
-- Update weather icons in Images.
+- Update weather icons in images.
+
+## Notes
+
+- The frontend communicates with the backend via HTTP requests. Ensure CORS is handled if accessing from different origins.
+- For production, consider securing API keys and using environment variables.
 
 ## License
 
