@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('bg/hail-bg.jpg');
+    background-image: url('assets/bg/hail-bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -24,7 +24,7 @@ body {
     margin: 0;
     height: 90vh;
     width: 80vw;
-    background-image: url('bg/hail-bg.jpg');
+    background-image: url('assets/bg/hail-bg.jpg');
     filter: brightness(80%);
     background-size: cover;
     background-position: center;
